@@ -5,8 +5,8 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-@TableName("t_role_menu")
 @Data
+@TableName("t_role_menu")
 public class RoleMenu implements Serializable {
 	
 	private static final long serialVersionUID = -7573904024872252113L;

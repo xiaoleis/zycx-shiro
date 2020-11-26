@@ -1,6 +1,8 @@
 package com.zycx.zycxshiro.common.util;
 
 
+import com.sun.crypto.provider.SunJCE;
+
 import javax.crypto.Cipher;
 import java.security.Key;
 import java.security.Security;
@@ -51,7 +53,7 @@ public class EncryptUtil {
     }
 
     EncryptUtil(String strKey) throws Exception {
-        Security.addProvider(new com.sun.crypto.provider.SunJCE());
+        Security.addProvider(new SunJCE());
         Key key = getKey(strKey.getBytes());
 
         encryptCipher = Cipher.getInstance("DES");
