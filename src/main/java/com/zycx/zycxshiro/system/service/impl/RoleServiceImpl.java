@@ -34,6 +34,7 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements Ro
 
     @Autowired
     private RoleMenuMapper roleMenuMapper;
+
     @Autowired
     private UserRoleService userRoleService;
     @Autowired

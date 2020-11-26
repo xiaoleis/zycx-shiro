@@ -16,7 +16,7 @@
         <result column="AVATAR" jdbcType="VARCHAR" property="avatar"/>
         <result column="DESCRIPTION" jdbcType="VARCHAR" property="description"/>
     </resultMap>
-    <resultMap id="deptUsersMap" type="cc.mrbird.febs.system.domain.DeptUsers">
+    <resultMap id="deptUsersMap" type="com.zycx.zycxshiro.system.domain.DeptUsers">
         <id column="userIds" jdbcType="VARCHAR" property="userIds"/>
         <result column="deptId" jdbcType="DECIMAL" property="deptId"/>
     </resultMap>
